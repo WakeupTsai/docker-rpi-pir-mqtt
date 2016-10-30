@@ -5,9 +5,10 @@ import os
 # publish a message then disconnect.
 host = os.environ['MQTT_HOST']
 topic = os.environ['MQTT_TOPIC']
+pin = int(os.environ['PIN_INPUT'])
 
 #pir sensor
-pir = MotionSensor(4)
+pir = MotionSensor(pin)
 curren_status = 0
 last_status = 0
 
