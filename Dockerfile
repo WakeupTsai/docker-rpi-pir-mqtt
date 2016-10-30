@@ -1,4 +1,5 @@
-FROM hypriot/rpi-python:latest
+FROM wakeup706/docker-rpi-python
+
 RUN mkdir -p /pir-mqtt
 COPY pir-mqtt /pir-mqtt
 RUN pip install gpiozero \
