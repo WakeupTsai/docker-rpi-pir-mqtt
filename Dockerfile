@@ -1,4 +1,4 @@
-FROM wakeup706/docker-rpi-python
+FROM wakeup706/rpi-python
 
 RUN mkdir -p /pir-mqtt
 COPY pir-mqtt /pir-mqtt
